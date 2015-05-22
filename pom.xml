@@ -71,6 +71,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/api-usergroup.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/api-usergroup.git</developerConnection>
     <url>https://github.com/xwiki-contrib/api-usergroup</url>
+    <tag>api-usergroup-1.0</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -89,4 +90,20 @@
       <name>Paul-Catalin Cojan</name>
     </developer>
   </developers>
+  <profiles>
+   <profile>
+     <id>release</id>
+     <build>
+       <plugins>
+         <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-gpg-plugin</artifactId>
+           <configuration>
+             <skip>true</skip>
+           </configuration>
+         </plugin>
+       </plugins>
+     </build>
+   </profile>
+  </profiles>
 </project>
