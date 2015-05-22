@@ -31,7 +31,7 @@
   </parent>
   <groupId>org.xwiki.contrib.usergroup</groupId>
   <artifactId>api-usergroup</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>User Groups Service</name>
   <description>Get all groups for a user</description>
   <properties>
@@ -67,4 +67,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <scm>
+    <connection>scm:git:git://github.com/xwiki-contrib/api-usergroup.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/api-usergroup.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/api-usergroup</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>xwiki-staging</id>
+      <name>XWiki Staging Repository</name>
+      <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 </project>
