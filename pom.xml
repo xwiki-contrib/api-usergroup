@@ -31,7 +31,7 @@
   </parent>
   <groupId>org.xwiki.contrib.usergroup</groupId>
   <artifactId>api-usergroup</artifactId>
-  <version> 1.0-SNAPSHOT</version>
+  <version> 1.0</version>
   <name>Extended Group API</name>
   <description>List of groups and subgroups that the current user or group is member of</description>
   <properties>
